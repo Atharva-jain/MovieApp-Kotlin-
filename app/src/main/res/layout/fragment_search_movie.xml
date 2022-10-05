@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.SearchMovieFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSearchNotResult"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/noSearchImage"
+                android:layout_width="140dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_no_result"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/violet" />
+
+            <TextView
+                android:id="@+id/noSearchText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/violet"
+                android:textSize="24sp"
+                android:text="@string/no_movie"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/noSearchImage"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchMovie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/searchProgressBar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        style="@style/SpinKitView.ThreeBounce"
+        android:visibility="visible"
+        app:SpinKit_Color="@color/white"
+        android:layout_gravity="center_horizontal"/>
+</FrameLayout>

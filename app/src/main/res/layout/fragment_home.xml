@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/trending"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTrendingSeeMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/see_more"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTrendingMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/trendingProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    style="@style/SpinKitView.ThreeBounce"
+                    android:visibility="visible"
+                    app:SpinKit_Color="@color/white"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/popular"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvPopularSeeMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/see_more"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPopularMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/popularProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    style="@style/SpinKitView.ThreeBounce"
+                    android:visibility="visible"
+                    app:SpinKit_Color="@color/white"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/top_rate"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTopRateSeeMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/see_more"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopRateMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/topRateProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    style="@style/SpinKitView.ThreeBounce"
+                    android:visibility="visible"
+                    app:SpinKit_Color="@color/white"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/now_playing"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvNowPlayingSeeMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/see_more"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNowPlayingMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/nowPlayingProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    style="@style/SpinKitView.ThreeBounce"
+                    android:visibility="visible"
+                    app:SpinKit_Color="@color/white"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
