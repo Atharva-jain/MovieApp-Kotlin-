@@ -1,6 +1,5 @@
 # Movie App
-
-![Group 438](https://github.com/Atharva-jain/MovieApp-Kotlin-/assets/84101268/3054df92-f3c6-4006-9421-475c09370b9c)
+![Group 438](https://github.com/Atharva-jain/MovieApp-Kotlin-/assets/84101268/0524254a-9735-4162-9d8b-8172f6ee56dc)
 
 Welcome to the Movie App, an Android application that provides a seamless experience for discovering and exploring movies. Whether you're interested in trending, popular, top-rated, or upcoming movies, this app has got you covered. With a user-friendly interface and intuitive features, movie enthusiasts can easily find, search, and manage their favorite films.
 
